@@ -25,7 +25,7 @@ return (*this).tam;
 // ---------------------------------------------------
 // ---------------------------------------------------
 
-void anyadir (double a){
+void Conjunto::anyadir (double a){
 
   (*this).elementos[(*this).talla()] = a;
   //(*this).elementos[(*this).tam] = a;
@@ -34,12 +34,30 @@ void anyadir (double a){
 // ---------------------------------------------------
 // ---------------------------------------------------
 
-bool contiene (double b){
+bool Conjunto::contiene (double b){
   for (int i = 0; i < (*this).tam; i++) {
     if ((*this).elementos[i] == b) {
       return true;
     }else{
       return false;
+    }
+  }
+}
+
+// ---------------------------------------------------
+// ---------------------------------------------------
+
+void Conjunto::vaciar(){
+  (*this).tam = 0;
+}
+
+// ---------------------------------------------------
+// ---------------------------------------------------
+
+void Conjunto::eliminar (double c){
+  for (int i = 0; i < (*this).tam; i++) {
+    if ((*this).elementos[i] == c) {
+      (*this).elementos[i] ;
     }
   }
 }

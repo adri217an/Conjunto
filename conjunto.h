@@ -16,7 +16,12 @@
 
      int talla();
      void anyadir (double a);
-     bool contiene(dobule b);
+     bool contiene(double b);
+     void vaciar();
+     void eliminar(double c);
+     unir
+
+
 
 // completar perfil del resto de método
 };
