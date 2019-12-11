@@ -15,6 +15,8 @@
      Conjunto(double *p, int tam);
 
      int talla();
+     void anyadir (double a);
+     bool contiene(dobule b);
 
 // completar perfil del resto de método
 };
